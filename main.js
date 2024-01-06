@@ -1,11 +1,34 @@
-import {RadioStation} from "./RadioStation.js";
+// import json file
+import json_data from './data.json' assert {type: "json"}
+
+// import data as array
 import {import_data} from "./import_data.js";
+
+// import RadioStation class
+import {RadioStation} from "./RadioStation.js";
+
 
 
 // 1) import json file, assign ids, create array of objects
 
 let radios = []
 let id = 1;
+
+
+// 1A) import from data.json
+
+json_data.data.forEach((item)=>{
+    radios.push(new RadioStation(id, item.title, item.country))
+    ++id;
+})
+
+
+import_data.forEach((item)=>{
+    radios.push(new RadioStation(id, item.title, item.country))
+    ++id;
+})
+
+// 1B) import form import_data.js
 
 import_data.forEach((item)=>{
     radios.push(new RadioStation(id, item.title, item.country))
@@ -43,7 +66,7 @@ radios.forEach((item)=>{
 })
 
 // ---------------------------------------------------------------------------
-
+console.log(radios)
 
 
 

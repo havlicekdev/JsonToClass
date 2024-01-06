@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "title": "Music Radio",
+      "country": "CZ"
+    },
+
+    {
+      "title": "Sport Radio",
+      "country": "SK"
+    },
+
+    {
+      "title": "News Radio",
+      "country": "CZ"
+    }
+  ]
+}
