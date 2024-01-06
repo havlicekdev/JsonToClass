@@ -49,7 +49,7 @@ console.log(radios.find((radio) => radio.id === 2).get_title())
 console.log(radios.find((radio) => radio.id === 2).get_country())
 
 
-// 2B) get a property of particular radio object using getter - example change title of the object
+// 2B) set a property of particular radio object using setter - example change title of the object
 
 radios.find((radio) => radio.id === 1).set_title("Radiožurnál")
 console.log(radios.find((radio) => radio.id === 1).get_title())
