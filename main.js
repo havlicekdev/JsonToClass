@@ -66,6 +66,7 @@ radios.forEach((item)=>{
 })
 
 // ---------------------------------------------------------------------------
+console.log("All radio objects")
 console.log(radios)
 
 
